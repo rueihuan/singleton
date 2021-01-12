@@ -1,6 +1,6 @@
 {
   "name": "@rueihuan/singleton",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Singleton decorator. No constructor monkeypatching. Zero dependencies. Built with TypeScript.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
