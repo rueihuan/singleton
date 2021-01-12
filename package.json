@@ -1,6 +1,6 @@
 {
   "name": "@rueihuan/singleton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Singleton decorator. No constructor monkeypatching. Zero dependencies. Built with TypeScript.",
   "main": "dist/index.js",
   "bin": "dist/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rueihuan/singleton.git"
+    "url": "https://github.com/rueihuan/singleton.git"
   },
   "author": "rueihuan (rueihuan@foxmail.com)",
   "license": "MIT",
