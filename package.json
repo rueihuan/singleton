@@ -6,14 +6,13 @@
   "bin": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "compile": "rm -rf dist && tsc",
-    "prepack": "npm run compile"
+    "prepack": "rm -rf dist && tsc"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/rueihuan/singleton.git"
   },
-  "author": "rueihuan (rueihuan@foxmail.com)",
+  "author": "rueihuan (rueihuan@outlook.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rueihuan/singleton/issues"
