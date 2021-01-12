@@ -1,4 +1,4 @@
-export const SINGLETON_KEY = Symbol();
+export const SINGLETON_KEY = Symbol("Singleton Key");
 
 export type Singleton<T extends new (...args: any[]) => any> = T & {
   [SINGLETON_KEY]: T extends new (...args: any[]) => infer I ? I : never;
