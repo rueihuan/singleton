@@ -1,0 +1,36 @@
+{
+  "name": "@rueihuan/singleton",
+  "version": "1.0.1",
+  "description": "Singleton decorator. No constructor monkeypatching. Zero dependencies. Built with TypeScript.",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "compile": "rm -rf dist && tsc",
+    "prepack": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rueihuan/singleton.git"
+  },
+  "author": "rueihuan (rueihuan@foxmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rueihuan/singleton/issues"
+  },
+  "homepage": "https://github.com/rueihuan/singleton#readme",
+  "keywords": [
+    "singleton",
+    "proxy",
+    "single instance",
+    "decorator",
+    "typescript",
+    "ts"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
+  }
+}
