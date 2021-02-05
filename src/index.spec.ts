@@ -1,7 +1,7 @@
 import { singleton, Singleton, SINGLETON_KEY } from "./index";
 
 describe("Singleton", () => {
-  it("makes class a singleton", () => {
+  it("should make class a singleton", () => {
     @singleton
     class Test {}
 
@@ -15,7 +15,7 @@ describe("Singleton", () => {
     expect(instanceSingleton).toBe(instance1);
   });
 
-  it("makes class a singleton - non-decorator based", () => {
+  it("should make class a singleton - non-decorator based", () => {
     class Test {}
     const TestSingleton = singleton(Test);
 
@@ -31,7 +31,7 @@ describe("Singleton", () => {
     expect(instanceSingleton).toBe(instance1);
   });
 
-  it("does not make child class a singleton", () => {
+  it("should not make child class a singleton", () => {
     @singleton
     class Parent {}
     class Child extends Parent {}

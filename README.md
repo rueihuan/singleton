@@ -19,13 +19,13 @@ Singleton decorator. No constructor monkeypatching. Zero dependencies. Built wit
 1.  Run
 
     ```sh
-    npm i @rueihuan/singleton
+    npm i @ood/singleton
     ```
 
     or
 
     ```sh
-    yarn add @rueihuan/singleton
+    yarn add @ood/singleton
     ```
 
 1.  **(Optional)** Enable decorators
@@ -45,7 +45,7 @@ Singleton decorator. No constructor monkeypatching. Zero dependencies. Built wit
 ## Quick start
 
 ```ts
-import { singleton } from "@rueihuan/singleton" 
+import { singleton } from "@ood/singleton" 
 
 @singleton
 class Test {}
@@ -56,7 +56,7 @@ new Test() === new Test() // returns `true`
 ## Usage without decorators
 
 ```ts
-import { singleton } from "@rueihuan/singleton"
+import { singleton } from "@ood/singleton"
 
 class Test {}
 const TestSingleton = singleton(Test)
@@ -69,7 +69,7 @@ new TestSingleton() === new TestSingleton() // returns `true`
 Any child of your singleton will not be a singleton.
 
 ```ts
-import { singleton } from "@rueihuan/singleton"
+import { singleton } from "@ood/singleton"
 
 @singleton
 class Parent {}
@@ -92,7 +92,7 @@ new ChildSingleton() === new ChildSingleton() // returns `true`
 Your singleton instance is always available as a static property of a class by key `SINGLETON_KEY`.
 
 ```ts
-import { singleton, SINGLETON_KEY } from "@rueihuan/singleton"
+import { singleton, SINGLETON_KEY } from "@ood/singleton"
 
 @singleton
 class Test {}
